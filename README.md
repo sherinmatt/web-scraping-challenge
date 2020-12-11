@@ -11,5 +11,5 @@ The goal of the project was to build a web application. For which, I scraped web
 
   * Mars Hemispheres
   
- Lastly, utilized MongoDB and Flask to create HTML Mars web page. 
+ Lastly, the goal was to utilize MongoDB and Flask to create HTML Mars web page. 
   
