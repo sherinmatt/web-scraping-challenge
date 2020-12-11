@@ -15,9 +15,17 @@ def index():
     mars_record = mongo.db.record_collection.find_one()
     return render_template("index.html", scrape_data = mars_record)
 
-#route scrape()
+#route scrape() f
+
+@app.route("/scrape")
+def scrape():
+
+    scrape_data = scrape_mars.scrape()
+
+    return redirect("/")
 
 
+# mongodb issues, flask
 if __name__ == "__main__":
     app.run(debug=True)
 
