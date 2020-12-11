@@ -34,13 +34,13 @@ def scrape():
     featured_image_url = complete_url + y
 
 #MARS Facts
-    #read html
+#read html
     mars_info = pd.read_html("https://space-facts.com/mars/")  
-    #df 
+#df 
     mars_info = pd.DataFrame(mars_info[0])
-    #columns
+#columns
     mars_info.columns = ["Description", "Mars"]  
-    #changing to html string
+#changing to html string
     mars_facts_s = mars_info.to_html()
 
 
@@ -67,5 +67,18 @@ def scrape():
 
 # dictionary: 5 componets
 
+    scrape_data = {
+        "news_title":  news_title, 
+        "news_p": news_p,
+        "featured_image_url": featured_image_url,
+        "mars_facts_s": mars_facts_s,
+        "hemi_title_image" : hemi_title_image 
+    }
+
+    browser.quit()
+
+    return scrape_data
+
+#print (scrape())
 
 
