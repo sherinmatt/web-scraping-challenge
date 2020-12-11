@@ -7,7 +7,7 @@ The goal of the project was to build a web application. For which, I scraped web
 
   * Mars Feature Image 
 
-  * Mars Facts which contains information about Mars  
+  * Mars Facts Table which contains information about Mars  
 
   * Mars Hemispheres
   
