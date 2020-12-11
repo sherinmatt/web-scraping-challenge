@@ -14,15 +14,17 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_application")
 def index():
     mars_record = mongo.db.record_collection.find_one()
     return render_template("index.html", scrape_data = mars_record)
-#  flask issues affecting mongo connection
+#  flask issues affecting mongo connection!!
+
+
 
 #route scrape() f
 
 @app.route("/scrape")
 
 def scrape():
-#issue with running scrape because of flask
-    #scrape_data = scrape_mars.scrape()
+#issues with running scrape because of flask
+    scrape_data = scrape_mars.scrape()
 #need to update the mongodb
     #mongo.db.record_collection.update({}, scrape_data , upsert=True)
     return redirect("/")

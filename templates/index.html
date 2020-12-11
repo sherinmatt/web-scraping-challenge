@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
+
 <!-- body -->
 <body>
+
     <div class="container">
         <div class="jumbotron text-center">
             <h1>Mission to Mars</h1>
@@ -20,45 +22,52 @@
 
     </div>
 
-<!-- Mars News  -->
+<!-- 1 Mars News  -->
 
     <div class = row>
         <div class = "col-md-12">
             <h3> Latest Mars News </h3>
-
-
+            <h4>{{scrape_data.news_title}}</h4>
+            <p>{{scrape_data.news_p}}</p>
         </div>
 
     </div>
 
-<!-- Mars Image  -->
+
+<!-- 2 Mars Image  -->
     <div class = row>
         <div class = "col-md-12">
             <h3> Featured Mars Image </h3>
+            <img src = "{{scrape_data.featured_image_url}}" alt = "Mars: Feature Images"> 
 
-            
         </div>
-
     </div>
 
-<!-- Mars  Facts -->
+
+<!-- 3 Mars  Facts -->
+
     <div class = row>
-        <div class = "col-md-12">
+        <div class = "table">
              <h3> Mars Facts </h3>
-
-
-        
+             <p> {{scrape_data.mars_facts_s}} </p> 
+        </div>
     </div>
 
-    </div>
 
-<!-- Mars   -->
+
+<!-- 4 Mars Hemispheres  -->
+
     <div class = row>
         <div class = "col-md-12">
              <h3> Mars Hemispheres </h3>
+                {% for hemis in scrape_data.hemi_title_image %}
+                    <div class = "thumbnail">
+                        <img src = "{{hemis.img_url}}" alt = "Mars Hemispheres">
+                        <h4>{{hemis.title}}</h4>
 
+                    </div>
+                {% endfor %}
 
-        
         </div>
 
     </div>
@@ -68,3 +77,5 @@
 </body>
 
 </html>
+
+<!-- Flask not working properly -->
