@@ -3,7 +3,7 @@
 The goal of the project was to build a web application. For which, I scraped websites to pull data and find out about the following information : 
 
   * Latest Mars News
-  ** Mars news title and news information paragraph
+  * * Mars news title and news information paragraph
 
   * Mars Feature Image 
 
