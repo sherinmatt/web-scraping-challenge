@@ -1,15 +1,30 @@
 # web-scraping-challenge
 # Mission to Mars
-The goal of the project was to build a web application. For which, I scraped websites to pull data and find out about the following information : 
 
-  * Latest Mars News
-  * * Mars news title and news information paragraph
+   ## Summary:
+    The goal of the project was to utilize MongoDB and Flask to create HTML Mars web page.
+    
+   ## Technologies Used:
+    * MongoDB
+    * Flask
+    * HTML
+    * Splinter
+    * Pandas
+    * Beautiful Soup
 
-  * Mars Feature Image 
+  ## Steps Taken
+    * Firstly, scraped websites to pull data and find out about the following information : 
 
-  * Mars Facts Table which contains information about Mars  
+    * Latest Mars News
+    * * Mars news title and news information paragraph
+    * Mars Feature Image 
+    * Mars Facts Table which contains information about Mars  
+    * Mars Hemispheres
 
-  * Mars Hemispheres
+## Inspiration
+ * Rutgers Bootcamp
   
- Lastly, the goal was to utilize MongoDB and Flask to create HTML Mars web page. 
+ 
   
+  
+
